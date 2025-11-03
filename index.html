@@ -20,7 +20,7 @@
       bottom: 0;
     }
 
-    /* 🧭 تصميم احترافي لإشارة الشمال */
+    /* 🧭 إشارة شمال مضمّنة ومصممة */
     .north-arrow {
       position: absolute;
       top: 10px;
@@ -32,14 +32,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
       z-index: 9999;
     }
 
     .north-arrow img {
       width: 50px;
       height: 50px;
-      transform: rotate(0deg);
     }
   </style>
 </head>
@@ -47,9 +46,17 @@
 <body>
   <div id="map"></div>
 
-  <!-- 🧭 إشارة الشمال -->
+  <!-- 🧭 إشارة الشمال (الصورة مضمنة Base64) -->
   <div class="north-arrow">
-    <img src="https://cdn-icons-png.flaticon.com/512/54/54420.png" alt="North Arrow">
+    <img 
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAASFBMVEX///8AAADg4OC2trZkZGQWFhZo
+      aGhmZmYvLy9JSUkhISExMTFwcHAkJCRXV1dCQkI/Pz+ampqioqIuLi6Dg4NsbGzV1dVvDKy9AAAByUlEQVRIie2U0ZKDIAxFKRVRxVhR4v7/
+      s4uVVuNaXDBb7PPDLZQElX2wUZpAk8P22LRnMruqCGBN2wo6oKym77aObK4YYEmMb8eqCvV6/aMbWfxFhLLbZyZLdZ3FjABX5+QOb48XfFGu
+      cUuD/YNmQ6bKbt4E2nQfx1ADpPgDJ+9HRhhxMNkcD1Jm96dNjDSSYQdwldhMlXmr4Vwb45UN9i1H4pBnT+xYmuG0SCFqI21zq7vUT9S9TqkK
+      4+Hn3WoWlRKrGWi1dcZPlU4e1BSOjYQ0CqqdwMf5vT8JmFHHr0uP5AQrEmuWpVFGMXDJL47Mrc2AZ8imI5xwJ8poVZvg/6kncKpD7HjrUGz
+      ZKCPzXJ0Gcn1vQo/2rCr3hCkzrbz/zxqFlnOMgO5j8d6hK6R+yk8nT1+EX4fFvhklKOaYbZV4l7On89hLLCuPwbF+PibEc3y7ujvynx4By2n
+      0cRzTdSp6gAAAABJRU5ErkJggg==" 
+      alt="North Arrow">
   </div>
 
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -116,4 +123,5 @@
     });
   </script>
 </body>
+
 </html>
